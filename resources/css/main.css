@@ -1,0 +1,71 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container-1 {
+	height: 65vh;
+	width: 100%;
+	background-image: url('../images/bit_main_4.jpg'); 
+	background-size: cover;
+	background-attachment: fixed;
+	margin:0px;
+	padding-top: 35vh;
+	text-align: center;	
+	font-size: 30px;
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#container-2 {
+	height: 100vh;
+	width: 100%;
+	background-color: #1A477E;
+}
+
+.ieee-logo {
+	height: 70px;
+	width: 239.32px;
+}
+
+.ieee-logo-hover {
+	height: 72px;
+	width: 246.15px;
+}
+
+
+#main-text {
+	margin-top: 0px;
+}
+
+#scroll-down-icon {
+	height:30px; 
+	width: 70px;
+
+	/*The animation part..*/ 
+	animation: animate 1s linear infinite;
+
+}
+
+@keyframes animate {
+	0%
+	{
+		transform: translateY(-10px);
+	}
+	20%
+	{
+		transform: translateY(0px);
+	}
+	40%
+	{
+		transform: translateY(0px);
+	}
+	60%
+	{
+		transform: translateY(0px);
+	}
+	100%
+	{
+		transform: translateY(40px);
+	}
+}
