@@ -2,6 +2,39 @@ body {
 	margin: 0;
 	padding: 0;
 }
+/*nav bar css*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+    background-color: #003380;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+	font-weight: 500;
+}
+
+li a:hover:not(.active) {
+    background-color: #66a3ff;
+}
+
+.active {
+    background-color: #141452;
+}
+/*nav bar css over*/
 
 #container-1 {
 	height: 65vh;
@@ -69,3 +102,4 @@ body {
 		transform: translateY(40px);
 	}
 }
+
