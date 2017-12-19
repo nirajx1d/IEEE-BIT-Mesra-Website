@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
+/*nav bar css*/
 ul {
     list-style-type: none;
     margin: 0;
@@ -33,7 +34,7 @@ li a:hover:not(.active) {
 .active {
     background-color: #141452;
 }
-
+/*nav bar css over*/
 
 #container-1 {
 	height: 65vh;
