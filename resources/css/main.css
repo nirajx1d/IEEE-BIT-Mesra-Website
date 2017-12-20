@@ -6,14 +6,19 @@ body {
 	-ms-user-select: none;
 	-moz-user-select: none;
 }
+
+
 #nav-bar {
     list-style-type: none;
+	display: block;
     margin: 0;
     padding: 0;
-    background-color: #003380;
+	height: 60px;
+    background-color:transparent;
     position: fixed;
     top: 0;
     width: 100%;
+	transition: all ease .5s;
 }
 
 #nav-bar li {
@@ -36,7 +41,12 @@ body {
 .active {
     background-color: #141452;
 }
-
+/*nav scrolling*/ 
+#nav-bar.shrink {
+  height: 60px;
+  transition: all ease .5s;
+  background:  #000033; /*Change background to dark blue on scroll*/
+}
 
 #container-1 {
 	height: 65vh;

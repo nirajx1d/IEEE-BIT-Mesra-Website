@@ -23,6 +23,14 @@ $(document).ready(function(){
       $(this).stop().animate({width: '-=6.83px'},100);
     }
   );
-    
-
+    //when height is greater than 40px then shrink class is added to nav bar
+	//you can change color of navbar after scrolling in css
+	$(window).scroll(function() {
+  	if($(document).scrollTop() > 40) {
+    	$('#nav-bar').addClass('shrink');
+    }
+    else {
+    $('#nav-bar').removeClass('shrink');
+    }
+  });
 });
