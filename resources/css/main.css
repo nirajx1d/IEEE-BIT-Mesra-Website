@@ -29,9 +29,11 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 25px;
+    font-style: 19px;
+    padding: 20px 85px;
     text-decoration: none;
-	font-weight: 500;
+	font-weight: 1000;
+	font-family: 'Roboto-Condensed', sans-serif;
 }
 
 #nav-bar li a:hover:not(.active) {
@@ -44,7 +46,7 @@ body {
 /*nav scrolling*/ 
 #nav-bar.shrink {
   height: 60px;
-  transition: all ease .5s;
+  transition: all ease 2s;
   background:  #000033; /*Change background to dark blue on scroll*/
 }
 
@@ -59,7 +61,7 @@ body {
 	text-align: center;	
 	font-size: 30px;
 	color: #fff;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto-Condensed', sans-serif;
 }
 
 #container-2 {
@@ -69,8 +71,8 @@ body {
 }
 
 .ieee-logo {
-	height: 70px;
-	width: 239.32px;
+	height: 100px;
+	width: 341.88px;
 }
 
 #main-text {
