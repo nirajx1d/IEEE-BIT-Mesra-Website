@@ -33,5 +33,4 @@ $(document).ready(function(){
     $('#nav-bar').removeClass('shrink');
     }
   });
-
 });
