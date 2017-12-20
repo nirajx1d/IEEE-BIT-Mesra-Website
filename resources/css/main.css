@@ -7,6 +7,7 @@ body {
 	-moz-user-select: none;
 }
 
+
 #nav-bar {
     list-style-type: none;
 	display: block;
@@ -14,7 +15,6 @@ body {
     padding: 0;
 	height: 60px;
     background-color:transparent;
-    background-color: #003380;
     position: fixed;
     top: 0;
     width: 100%;
