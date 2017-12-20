@@ -62,6 +62,5 @@ $('a[href*="#"]')
     $('#nav-bar').removeClass('shrink');
     }
   });
-    
 
 });
