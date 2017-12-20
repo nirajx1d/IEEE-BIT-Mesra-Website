@@ -6,14 +6,19 @@ body {
 	-ms-user-select: none;
 	-moz-user-select: none;
 }
+
+
 #nav-bar {
     list-style-type: none;
+	display: block;
     margin: 0;
     padding: 0;
-    background-color: #003380;
+	height: 60px;
+    background-color:transparent;
     position: fixed;
     top: 0;
     width: 100%;
+	transition: all ease .5s;
 }
 
 #nav-bar li {
@@ -24,9 +29,11 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 25px;
+    font-style: 19px;
+    padding: 20px 85px;
     text-decoration: none;
-	font-weight: 500;
+	font-weight: 1000;
+	font-family: 'Roboto-Condensed', sans-serif;
 }
 
 #nav-bar li a:hover:not(.active) {
@@ -36,7 +43,12 @@ body {
 .active {
     background-color: #141452;
 }
-
+/*nav scrolling*/ 
+#nav-bar.shrink {
+  height: 60px;
+  transition: all ease 2s;
+  background:  #000033; /*Change background to dark blue on scroll*/
+}
 
 #container-1 {
 	height: 65vh;
@@ -49,7 +61,7 @@ body {
 	text-align: center;	
 	font-size: 30px;
 	color: #fff;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Roboto-Condensed', sans-serif;
 }
 
 #container-2 {
@@ -59,8 +71,8 @@ body {
 }
 
 .ieee-logo {
-	height: 70px;
-	width: 239.32px;
+	height: 100px;
+	width: 341.88px;
 }
 
 #main-text {
