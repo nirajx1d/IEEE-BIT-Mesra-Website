@@ -10,25 +10,25 @@
   -webkit-animation: moving-panel 3s infinite alternate;
   animation: moving-panel 3s infinite alternate; }
   .colortext .anim-shape:nth-child(1) {
-    fill: #; }
+    fill: #000075; }
   .colortext .anim-shape:nth-child(2) {
-    fill: #008CC1; }
+    fill: #000070; }
   .colortext .anim-shape:nth-child(3){
-    fill: #008CC1; }
+    fill: #000065; }
   .colortext .anim-shape:nth-child(4){
-    fill: #12679D; }
+    fill: #000060; }
   .colortext .anim-shape:nth-child(5) {
-    fill: #12679D; }
+    fill: #000055; }
   .colortext .anim-shape:nth-child(6) {
-    fill: #2E4392; }
+    fill: #000050; }
   .colortext .anim-shape:nth-child(7) {
-    fill: #2E4392; }
+    fill: #000045; }
   .colortext .anim-shape:nth-child(8) {
-    fill: #12679D; }
+    fill: #000036; }
   .colortext .anim-shape:nth-child(9) {
-    fill: #008CC1; }
+    fill: #000023; }
   .colortext .anim-shape:nth-child(10) {
-    fill: #008CC1; }
+    fill: #000010; }
 
 .shadow {
   -webkit-transform: translate(10px, 10px);
@@ -54,18 +54,18 @@ BODY {
   font: 800 14.5em/1  'Open Sans', Impact; }
 
 svg {
- 	position: absolute;
-  	width: 50%;
-  	top : 50%;
-  	left :50%;
-  	transform: translate(-50%,-50%);	
-  	margin: 0 auto 50px;
-  	display: block;
-  	text-transform: uppercase;
-  	font-family: 'Lato', sans-serif;
+  position: absolute;
+    width: 50%;
+    top : 50%;
+    left :50%;
+    transform: translate(-50%,-50%);  
+    margin: 0 auto 50px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
  } 
 
  span {
- 	
+  
  }
-	
+  
