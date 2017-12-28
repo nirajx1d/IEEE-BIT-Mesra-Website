@@ -56,10 +56,10 @@ $('a[href*="#"]')
 	//you can change color of navbar after scrolling in css
 	$(window).scroll(function() {
   	if($(document).scrollTop() > 40) {
-    	$('#nav-bar').addClass('shrink');
+    	$('#nav-bar').addClass('shrink'),document.getElementById("btn").style.display = "block";
     }
     else {
-    $('#nav-bar').removeClass('shrink');
+    $('#nav-bar').removeClass('shrink'),document.getElementById("btn").style.display = "none";
     }
   });
 

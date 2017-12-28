@@ -1,35 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
 	<title>IEEE|BIT Mesra</title>
 	<style>
 		@import url("https://fonts.googleapis.com/css?family=Lato:900");
 	</style>
-	<style>
+	<link rel="stylesheet" href="resources/css/demo.css">
+	<link rel="stylesheet" href="resources/css/footer-distributed-with-address-and-phones.css">
 	
-	</style>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/sidenav - toast.css">
+	<link rel="icon"  href="resources/images/ieee-logo1.jpg" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/js/main.js"></script>
 </head>
 <body>
-
+<button onclick="topFunc()" id="btn" title="Go to top">TOP</button>
 	<ul id="nav-bar" align="center">
 <!--nav bar unorder list float:left , href me container ka naam dalna hai for linking -->
   <li><a class="active" href="#container-1">HOME</a></li>
   <li><a href="#about">ABOUT US</a></li>
-  <li><a href="#events">EVENTS</a></li>
+ 
   <li><a href="#photogallery">PHOTO GALLERY</a></li>
   <li><a href="#members">MEMBERS</a></li>
   <li><a href="#contactus">CONTACT US</a></li>
 </ul>
+
+<!--Side nav bar with toast function-->
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="add1"onclick="mytoast()">will add</a>
+  <a href="#" id="events" onclick="mytoast()">Events</a>
+  <a href="#" id="projects" onclick="mytoast()">Projects</a>
+  <a href="#" id="add2" onclick="mytoast()">will add </a>
+</div>
+<div id="snackbar">Comming Soon</div>
+<!--side nav ends-->
 	<div id="container-1">
 		<span><a href="https://www.ieee.org/" target="_blank"><img class="ieee-logo" src="resources/images/ieee-logo.png" alt="logo"></a>
 		<p id="main-text"><strong>STUDENT CHAPTER BIT MESRA</strong></p></span>
 		<a href="#container-2" id="slider"><img id="scroll-down-icon" src="resources/images/scroll_down.png"></a>
 	</div>
 	<div id="container-2"></div>
+	<div
+
+	<!-- The footer content of your page would go here. -->
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>IEEE |<span>| BIT MESRA</span></h3>
+
+				<p class="footer-links">
+					<!--<a href="index2.html">·Home</a>-->
+					
+					<a href="https://spectrum.ieee.org/">·IEEE Spectrum</a>
+					
+					<a href="http://ieeexplore.ieee.org/Xplore/home.jsp">·IEEE Xplore</a>
+					
+					<a href="http://standards.ieee.org/">·IEEE Standards</a>
+					
+					<a href="http://www.ieeer10.org/">·IEEE Region10</a>
+					
+				</p>
+
+				<p class="footer-company-name">COPYRIGHT &copy; 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Birla Institute of Technology, Mesra</span> Ranchi, Jharkhand 835215</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>PABX: +91 651 2275444/2275896</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="https://www.bitmesra.ac.in/">www.bitmesra.ac.in</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>BIT MESRA</span>
+					For over five decades, BIT Mesra has been engaged in nurturing minds through a rich heritage of academic excellence. Essentially a hub of bustling student activities, the beautiful campus has been a second-home to thousands of students in their journey to challenge the times.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+<!--footer ends-->
+		
+<!--javascript code for buttom to top button and toast function-->		
+<script>
+function topFunc() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+function mytoast() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 
 </body>
 </html>
