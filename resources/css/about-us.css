@@ -1,0 +1,52 @@
+body {
+    background: #1A477E;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+#ieee-bit-logo {
+    height:230px;
+    float: right;
+    border-radius: 50%;
+    border: 5px solid #0072A8; 
+    margin: 0 10px;
+    margin-bottom: 20px;
+    top:-20px;
+}
+
+#container {
+    vertical-align: middle;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 25vh auto;
+    width: 80%;
+}
+
+#container h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#container p {
+    font-size: 15px;
+    margin: 20px 0 0;
+    color: #fff;
+    padding-left: 20px;
+    border-left: 5px solid #0072A8;
+    line-height: 30px;
+}
+
+@media (max-width: 900px) {
+    #container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    #ieee-bit-logo {
+        float: none;
+        height: 260px;
+        margin: 20px auto;
+    }
+}

@@ -9,9 +9,8 @@
 	<style>
 		@import url("https://fonts.googleapis.com/css?family=Lato:900");
 	</style>
-	<link rel="stylesheet" href="resources/css/demo.css">
+
 	<link rel="stylesheet" href="resources/css/footer-distributed-with-address-and-phones.css">
-	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
@@ -23,15 +22,18 @@
 	<script type="text/javascript" src="resources/js/main.js"></script>
 </head>
 <body>
-<button onclick="topFunc()" id="btn" title="Go to top">TOP</button>
+
+
+<a href="#container-1" ><button id="btn" title="Go to top">TOP</button></a>
 	<ul id="nav-bar" align="center">
-<!--nav bar unorder list float:left , href me container ka naam dalna hai for linking -->
-  <li><a class="active" href="#container-1">HOME</a></li>
-  <li><a href="#about">ABOUT US</a></li>
- 
-  <li><a href="#photogallery">PHOTO GALLERY</a></li>
-  <li><a href="#members">MEMBERS</a></li>
-  <li><a href="#contactus">CONTACT US</a></li>
+<!--nav bar unorder list float:left -->
+  <li><a class="active" id="home" href="#container-1">HOME</a></li>
+  <li><a id="about-us" href="#container-2">ABOUT US</a></li>
+  <li><a id="event" href="#container-2">EVENTS</a></li>
+  <li><a id="photo-gallery" href="#container-2">PHOTO GALLERY</a></li>
+  <li><a id="members" href="#container-2">MEMBERS</a></li>
+  <li><a id="contact-us" href="#container-2">CONTACT US</a></li>
+
 </ul>
 
 <!--Side nav bar with toast function-->
@@ -41,7 +43,9 @@
   <a href="#" id="projects" onclick="mytoast()">Projects</a>
   <a href="#" id="add2" onclick="mytoast()">will add </a>
 </div>
-<div id="snackbar">Comming Soon</div>
+
+<div id="snackbar">Coming Soon</div>
+
 <!--side nav ends-->
 	<div id="container-1">
 		<span><a href="https://www.ieee.org/" target="_blank"><img class="ieee-logo" src="resources/images/ieee-logo.png" alt="logo"></a>
@@ -49,9 +53,11 @@
 		<a href="#container-2" id="slider"><img id="scroll-down-icon" src="resources/images/scroll_down.png"></a>
 	</div>
 	<div id="container-2"></div>
-	<div
 
-	<!-- The footer content of your page would go here. -->
+	<div></div>
+
+	<!--The footer content of your page would go here. -->
+
 
 		<footer class="footer-distributed">
 
@@ -61,18 +67,15 @@
 
 				<p class="footer-links">
 					<!--<a href="index2.html">·Home</a>-->
-					
-					<a href="https://spectrum.ieee.org/">·IEEE Spectrum</a>
-					
-					<a href="http://ieeexplore.ieee.org/Xplore/home.jsp">·IEEE Xplore</a>
-					
-					<a href="http://standards.ieee.org/">·IEEE Standards</a>
-					
-					<a href="http://www.ieeer10.org/">·IEEE Region10</a>
-					
+
+					<a href="https://spectrum.ieee.org/" target="_blank">·IEEE Spectrum</a>
+					<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">·IEEE Xplore</a>
+					<a href="http://standards.ieee.org/" target="_blank">·IEEE Standards</a>
+					<a href="http://www.ieeer10.org/" target="_blank">·IEEE Region10</a>
 				</p>
 
-				<p class="footer-company-name">COPYRIGHT &copy; 2017</p>
+				<p class="footer-company-name">COPYRIGHT &copy; 2018</p>
+
 			</div>
 
 			<div class="footer-center">
@@ -89,7 +92,9 @@
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="https://www.bitmesra.ac.in/">www.bitmesra.ac.in</a></p>
+
+					<p><a href="https://www.bitmesra.ac.in/" target="_blank">www.bitmesra.ac.in</a></p>
+
 				</div>
 
 			</div>
@@ -114,7 +119,7 @@
 
 		</footer>
 <!--footer ends-->
-		
+
 <!--javascript code for buttom to top button and toast function-->		
 <script>
 function topFunc() {
@@ -127,6 +132,7 @@ function mytoast() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 </script>
+
 
 </body>
 </html>
