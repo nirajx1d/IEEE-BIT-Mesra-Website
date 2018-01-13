@@ -60,6 +60,7 @@ $('a[href*="#"]')
   );
 
   //when height is greater than 40px then shrink class is added to nav bar
+
   //you can change color of navbar after scrolling in css
   $(window).scroll(function() {
     if($(document).scrollTop() > 40) {
@@ -85,6 +86,7 @@ $('a[href*="#"]')
       $(curr_active).removeClass("active");
       $("#members").addClass("active");
       curr_active="#members";
+
     }
   });
   $("#about-us").click(function(){

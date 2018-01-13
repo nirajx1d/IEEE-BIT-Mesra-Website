@@ -1,3 +1,4 @@
+
 /*sidenav css*/
 #mySidenav a {
     position: absolute;
@@ -32,6 +33,87 @@
 
 #add2 {
     top: calc(20vh + 180px);
+    background-color: #555
+}
+/*sidenave css ends*/
+
+/*toast css */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: 	#595959;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 18px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+=======
+/*sidenav css*/
+#mySidenav a {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width:80px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#add1 {
+    top: 140px;
+    background-color: #4dff4d;
+}
+
+#events {
+    top: 200px;
+    background-color:  #aa00ff;
+}
+
+#projects {
+    top: 260px;
+    background-color: #f44336;
+}
+
+#add2 {
+    top: 320px;
     background-color: #555
 }
 /*sidenave css ends*/

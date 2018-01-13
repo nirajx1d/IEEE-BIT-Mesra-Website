@@ -9,8 +9,10 @@
 	<style>
 		@import url("https://fonts.googleapis.com/css?family=Lato:900");
 	</style>
+
 	<link rel="stylesheet" href="resources/css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
@@ -21,6 +23,7 @@
 </head>
 <body>
 
+
 <a href="#container-1" ><button id="btn" title="Go to top">TOP</button></a>
 	<ul id="nav-bar" align="center">
 <!--nav bar unorder list float:left -->
@@ -30,6 +33,7 @@
   <li><a id="photo-gallery" href="#container-2">PHOTO GALLERY</a></li>
   <li><a id="members" href="#container-2">MEMBERS</a></li>
   <li><a id="contact-us" href="#container-2">CONTACT US</a></li>
+
 </ul>
 
 <!--Side nav bar with toast function-->
@@ -39,7 +43,9 @@
   <a href="#" id="projects" onclick="mytoast()">Projects</a>
   <a href="#" id="add2" onclick="mytoast()">will add </a>
 </div>
+
 <div id="snackbar">Coming Soon</div>
+
 <!--side nav ends-->
 	<div id="container-1">
 		<span><a href="https://www.ieee.org/" target="_blank"><img class="ieee-logo" src="resources/images/ieee-logo.png" alt="logo"></a>
@@ -47,9 +53,11 @@
 		<a href="#container-2" id="slider"><img id="scroll-down-icon" src="resources/images/scroll_down.png"></a>
 	</div>
 	<div id="container-2"></div>
+
 	<div></div>
 
 	<!--The footer content of your page would go here. -->
+
 
 		<footer class="footer-distributed">
 
@@ -59,6 +67,7 @@
 
 				<p class="footer-links">
 					<!--<a href="index2.html">·Home</a>-->
+
 					<a href="https://spectrum.ieee.org/" target="_blank">·IEEE Spectrum</a>
 					<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">·IEEE Xplore</a>
 					<a href="http://standards.ieee.org/" target="_blank">·IEEE Standards</a>
@@ -66,6 +75,7 @@
 				</p>
 
 				<p class="footer-company-name">COPYRIGHT &copy; 2018</p>
+
 			</div>
 
 			<div class="footer-center">
@@ -82,7 +92,9 @@
 
 				<div>
 					<i class="fa fa-envelope"></i>
+
 					<p><a href="https://www.bitmesra.ac.in/" target="_blank">www.bitmesra.ac.in</a></p>
+
 				</div>
 
 			</div>
@@ -107,6 +119,19 @@
 
 		</footer>
 <!--footer ends-->
+
+<!--javascript code for buttom to top button and toast function-->		
+<script>
+function topFunc() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+function mytoast() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 
 
 </body>
