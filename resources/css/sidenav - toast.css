@@ -21,20 +21,6 @@
     background-color: #4dff4d;
 }
 
-#events {
-    top: calc(20vh + 60px);
-    background-color:  #aa00ff;
-}
-
-#projects {
-    top: calc(20vh + 120px);
-    background-color: #f44336;
-}
-
-#add2 {
-    top: calc(20vh + 180px);
-    background-color: #555
-}
 /*sidenave css ends*/
 
 /*toast css */
@@ -79,7 +65,7 @@
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
 }
-=======
+
 /*sidenav css*/
 #mySidenav a {
     position: absolute;
@@ -89,6 +75,7 @@
     width:80px;
     text-decoration: none;
     font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
     color: white;
     border-radius: 0 5px 5px 0;
 }
@@ -99,23 +86,9 @@
 
 #add1 {
     top: 140px;
-    background-color: #4dff4d;
+    background-color: #262626;
 }
 
-#events {
-    top: 200px;
-    background-color:  #aa00ff;
-}
-
-#projects {
-    top: 260px;
-    background-color: #f44336;
-}
-
-#add2 {
-    top: 320px;
-    background-color: #555
-}
 /*sidenave css ends*/
 
 /*toast css */
