@@ -152,6 +152,7 @@ body {
     z-index: 1;
     transition: .5s;
     opacity: 0.3;
+
 }
 
 .row .column :hover:before {
@@ -206,7 +207,7 @@ body {
     position: relative;
     top: -6px;
 }
-
+/*
 #last-row {
     display: inline-block;
     text-align: center;
@@ -214,7 +215,9 @@ body {
 
 #last-row .column {
     margin-bottom: 60px;
-}
+    width: calc(25% - 20px);
+    min-height: 150px;
+}*/
 
 
 @media (max-width: 1600px) {

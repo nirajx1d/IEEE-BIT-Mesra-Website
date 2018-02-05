@@ -1,10 +1,6 @@
-body {
+html,body {
 	margin: 0;
 	padding: 0;
-	/*user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	-moz-user-select: none;*/
 }
 
 #nav-bar {
@@ -51,6 +47,43 @@ body {
   background:  #000033; /*Change background to dark blue on scroll*/
 }
 
+/*NAV BAR 2*/
+#nav-bar-2{
+	list-style-type: none;
+	display: none;
+    margin: 0;
+    padding: 0;
+	height: 60px;
+    background-color:transparent;
+    position: fixed;
+    top: 0;
+	transition: all ease .5s;
+	z-index: 10;
+}
+#nav-bar-2 li{
+  	float: left;
+}
+
+#nav-bar-2 li a {
+	display: block;
+    padding: 20px 50px;
+    margin: 5px auto; 
+    color: white;
+}
+#nav-bar-2 li a:hover:not(.active) {
+  	background-color: #66a3ff;
+}
+#nav-bar-2 li #blank:hover:not(.active) {
+	background: transparent;
+}
+
+/*nav scrolling*/ 
+#nav-bar-2.shrink {
+	height: 60px;
+	transition: all ease 2s;	
+	background:  #000033; /*Change background to dark blue on scroll*/
+}
+
 #container-1 {
 	margin-top: 0;
 	height: 65vh;
@@ -67,11 +100,6 @@ body {
 	font-family: 'Roboto-Condensed', sans-serif;
 }
 
-/*#container-2 {
-	min-height: 100vh;
-	width: 100%;
-}
-*/
 .ieee-logo {
 	height: 100px;
 	width: 341.88px;
@@ -85,30 +113,9 @@ body {
 #scroll-down-icon {
 	height:30px; 
 	width: 70px;
-
 	/*The animation part..*/ 
 	animation: animate 1s linear infinite;
 }
-/*button for bottom to top on click*/
-#btn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: tomato;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 10px;
-  transition: all ease .5s;
-}
-
-#btn:hover {
-  background-color: #555;
-/*button css over*/
 
 /*button for bottom to top on click*/
 #btn {
@@ -170,43 +177,69 @@ footer{
 }
 
 
-@media (max-width: 1620px) {
+@media screen and (max-width: 1620px) {
 	#nav-bar li a {
-		padding: 20px 60px;
+		padding: 20px 45px;
 	}
 }
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
 	#nav-bar li a {
+		padding: 20px 30px;	
+	}
+}
+@media screen and (max-width: 1200px) {
+	#nav-bar li a {
+		padding: 20px 20px;
+	}
+}
+@media screen and (max-width: 965px) {
+	#nav-bar{
+		display: none;
+	}
+	#nav-bar-2{
+		display: block;
+	}	
+}
+@media screen and (max-width: 965px) {
+	#nav-bar-2 li a {
+		padding: 20px 52px;
+	}
+}
+@media screen and (max-width: 860px) {
+	#nav-bar-2 li a {
+		padding: 20px 45px;
+	}
+}
+@media screen and (max-width: 760px) {
+	#nav-bar-2 li a {
 		padding: 20px 40px;
-		
 	}
 }
-@media (max-width: 1200px) {
-	#nav-bar li a {
-		padding: 20px 20px;
+@media screen and (max-width: 690px) {
+	#nav-bar-2 li a {
+		padding: 20px 35px;
 	}
 }
-@media (max-width: 800px) {
-	#nav-bar li a {
-		padding: 20px 20px;
-		font-size: 15px;
+@media screen and (max-width: 620px) {
+	#nav-bar-2 li a {
+		padding: 20px 30px;
 	}
 }
-@media (max-width: 400px) {
-	#nav-bar li a {
-		padding: 20px 10px;
-		font-size: 15px;
+@media screen and (max-width: 550px) {
+	#nav-bar-2 li a {
+		padding: 20px 26px;
+	}
+}
+@media screen and (max-width: 500px) {
+	#nav-bar-2 li a {
+		padding: 20px 22px;
+	}
+}
+@media screen and (max-width: 450px) {
+	#nav-bar-2 li a {
+		padding: 20px 18px;
 	}
 }
 
-/* the footers are fixed to the bottom of the page */
-footer{
-	position: fixed;
-	bottom: 0;
-}
 
-@media (max-height:800px){
-	footer { position: static; }
-
-}
 
