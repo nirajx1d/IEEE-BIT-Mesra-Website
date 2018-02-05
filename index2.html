@@ -15,9 +15,10 @@
 
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="resources/css/main.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/sidenav - toast.css">
-	<link rel="icon"  href="resources/images/ieee-logo1.jpg" />
+	<link rel="icon"  href="resources/images/ieee-logo2.png" />
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/js/main.js"></script>
 </head>
@@ -28,25 +29,35 @@
 	<ul id="nav-bar" align="center">
 <!--nav bar unorder list float:left -->
   <li><a class="active" id="home" href="#container-1">HOME</a></li>
-  <li><a id="about-us" href="#container-2">ABOUT US</a></li>
+  <li><a id="projects" onclick="mytoast()" style=" cursor: pointer;">PROJECTS</a></li>
   <li><a id="event" href="#container-2">EVENTS</a></li>
-  <li><a id="photo-gallery" href="#container-2">PHOTO GALLERY</a></li>
+  <li><a id="pg" href="#container-2">PHOTO GALLERY</a></li>
   <li><a id="members" href="#container-2">MEMBERS</a></li>
-  <li><a id="contact-us" href="#container-2">CONTACT US</a></li>
+  <li><a id="downloads" href="#container-2">DOWNLOADS</a></li>
+  <li><a id="contact-us" href="#container-2">CONTACT</a></li>
+
 
 </ul>
-
+<div id="nav-2">
+	<ul id="nav-bar-2" align="center">
+		<!--nav bar unorder list float:left -->
+		<li><a class="active" id="home2" href="#container-1"><i class="fa fa-home"></i></a></li>
+		<li><a id="projects2" onclick="mytoast()"><i class="fa fa-cubes"></i></a></li>
+		<li><a id="event2" href="#container-2"><i class="fa fa-calendar"></i></a></li>
+		<li><a id="pg2" href="#container-2"><i class="fa fa-image"></i></a></li>
+		<li><a id="members2" href="#container-2"><i class="fa fa-users"></i></a></li>
+		<li><a id="downloads2" href="#container-2"><i class="fa fa-download"></i></a></li>
+		<li><a id="contact-us2" href="#container-2"><i class="fa fa-phone"></i></a></li>
+		<li><a id="blank"></a></li>
+	</ul>
+</div>
 <!--Side nav bar with toast function-->
 <div id="mySidenav" class="sidenav">
-  <a href="#" id="add1"onclick="mytoast()">will add</a>
-  <a href="#" id="events" onclick="mytoast()">Events</a>
-  <a href="#" id="projects" onclick="mytoast()">Projects</a>
-  <a href="#" id="add2" onclick="mytoast()">will add </a>
+	<a href="#" id="add1" onclick="mytoast()">UPDATES</a>
 </div>
-
 <div id="snackbar">Coming Soon</div>
 
-<!--side nav ends-->
+<!--side nav ends -->
 	<div id="container-1">
 		<span><a href="https://www.ieee.org/" target="_blank"><img class="ieee-logo" src="resources/images/ieee-logo.png" alt="logo"></a>
 		<p id="main-text"><strong>STUDENT CHAPTER BIT MESRA</strong></p></span>
@@ -55,71 +66,46 @@
 	<div id="container-2"></div>
 
 	<div></div>
-
-	<!--The footer content of your page would go here. -->
-
-
-		<footer class="footer-distributed">
-
-			<div class="footer-left">
-
-				<h3>IEEE |<span>| BIT MESRA</span></h3>
-
-				<p class="footer-links">
-					<!--<a href="index2.html">·Home</a>-->
-
-					<a href="https://spectrum.ieee.org/" target="_blank">·IEEE Spectrum</a>
-					<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">·IEEE Xplore</a>
-					<a href="http://standards.ieee.org/" target="_blank">·IEEE Standards</a>
-					<a href="http://www.ieeer10.org/" target="_blank">·IEEE Region10</a>
-				</p>
-
-				<p class="footer-company-name">COPYRIGHT &copy; 2018</p>
-
-			</div>
-
-			<div class="footer-center">
-
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>Birla Institute of Technology, Mesra</span> Ranchi, Jharkhand 835215</p>
-				</div>
-
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>PABX: +91 651 2275444/2275896</p>
-				</div>
-
-				<div>
-					<i class="fa fa-envelope"></i>
-
-					<p><a href="https://www.bitmesra.ac.in/" target="_blank">www.bitmesra.ac.in</a></p>
-
-				</div>
-
-			</div>
-
-			<div class="footer-right">
-
-				<p class="footer-company-about">
-					<span>BIT MESRA</span>
-					For over five decades, BIT Mesra has been engaged in nurturing minds through a rich heritage of academic excellence. Essentially a hub of bustling student activities, the beautiful campus has been a second-home to thousands of students in their journey to challenge the times.
-				</p>
-
-				<div class="footer-icons">
-
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
-
-				</div>
-
-			</div>
-
-		</footer>
+<!--The footer content of your page would go here. -->
+<footer class="footer-distributed" id="foot">
+	<div class="footer-left">
+		<h3>IEEE |<span>| BIT MESRA</span></h3>
+		<p class="footer-links">
+			<!--<a href="index2.html">·Home</a>-->
+			<a href="https://spectrum.ieee.org/" target="_blank">·IEEE Spectrum</a>
+			<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">·IEEE Xplore</a>
+			<a href="http://standards.ieee.org/" target="_blank">·IEEE Standards</a>
+			<a href="http://www.ieeer10.org/" target="_blank">·IEEE Region10</a>
+		</p>
+		<p class="footer-company-name">COPYRIGHT &copy; 2018</p>
+	</div>
+	<div class="footer-center">
+		<div>
+			<a href="https://www.google.co.in/maps/place/Birla+Institute+of+Technology,+Mesra/@23.4122599,85.4377524,17z/data=!3m1!4b1!4m5!3m4!1s0x39f4fb53f0c27be7:0x66180c1cf3c5e704!8m2!3d23.4122599!4d85.4399411?hl=en" target="_blank"><i class="fa fa-map-marker"></i></a>
+			<p><span>Birla Institute of Technology, Mesra</span> Ranchi, Jharkhand 835215</p>
+		</div>
+		<div>
+			<i class="fa fa-phone"></i>
+			<p>PABX: +91 651 2275444/2275896</p>
+		</div>
+		<div>
+			<i class="fa fa-globe	"></i>
+			<p><a href="https://www.bitmesra.ac.in/" target="_blank">www.bitmesra.ac.in</a></p>
+		</div>
+	</div>
+	<div class="footer-right">
+		<p class="footer-company-about">
+			<span>BIT MESRA</span>
+				For over five decades, BIT Mesra has been engaged in nurturing minds through a rich heritage of academic excellence. Essentially a hub of bustling student activities, the beautiful campus has been a second-home to thousands of students in their journey to challenge the times.
+		</p>
+		<div class="footer-icons">
+			<a href="https://www.facebook.com/ieeebitmesra/" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com/ieeeorg?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://in.linkedin.com/company/ieee" target="_blank"><i class="fa fa-linkedin"></i></a>
+		</div>
+	</div>
+</footer>
 <!--footer ends-->
-
 <!--javascript code for buttom to top button and toast function-->		
 <script>
 function topFunc() {
