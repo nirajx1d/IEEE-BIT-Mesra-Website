@@ -1,6 +1,5 @@
 body {
     background: #1A477E;
-    height: 100vh;
     vertical-align: middle;
 }
 
@@ -18,7 +17,7 @@ body {
     vertical-align: middle;
     color: #fff;
     font-family: 'Roboto', sans-serif;
-    margin: 25vh auto;
+    margin: 15vh auto;
     width: 80%;
 }
 
@@ -30,7 +29,6 @@ body {
 
 #container p {
     font-size: 15px;
-    margin: 20px 0 0;
     color: #fff;
     padding-left: 20px;
     border-left: 5px solid #0072A8;
