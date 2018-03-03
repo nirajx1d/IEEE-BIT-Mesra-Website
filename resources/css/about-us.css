@@ -3,22 +3,12 @@ body {
     vertical-align: middle;
 }
 
-#ieee-bit-logo {
-    height:230px;
-    float: right;
-    border-radius: 50%;
-    border: 5px solid #0072A8; 
-    margin: 0 10px;
-    margin-bottom: 20px;
-    top:-20px;
-}
-
 #container {
     vertical-align: middle;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     margin: 15vh auto;
-    width: 80%;
+    width: 90%;
 }
 
 #container h1 {
@@ -35,16 +25,26 @@ body {
     line-height: 30px;
 }
 
+#container iframe {
+    float: right;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
 @media (max-width: 900px) {
     #container {
-        width: 90%;
+        width: 95%;
+    }
+    #container iframe {
+        width: calc(65% - 20px);
     }
 }
 
-@media (max-width: 450px) {
-    #ieee-bit-logo {
+@media (max-width: 600px) {
+    #container p {
         float: none;
-        height: 260px;
-        margin: 20px auto;
+    }
+    #container iframe {
+        width: calc(95% - 10px);
     }
 }
