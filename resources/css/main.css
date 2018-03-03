@@ -27,9 +27,10 @@ html,body {
     text-align: center;
     font-style: 19px;
     padding: 20px 85px;
-    text-decoration: none;
-	font-weight: 1000;
-	font-family: 'Roboto-Condensed', sans-serif;
+	text-decoration: none;
+	font-family: 'Quicksand', sans-serif;
+	/* font-weight: 1000; */
+	/* font-family: 'Roboto-Condensed', sans-serif; */
 }
 
 #nav-bar li a:hover:not(.active) {
@@ -108,6 +109,7 @@ html,body {
 
 #main-text {
 	margin-top: 0px;
+	font-family: 'Poiret One', cursive;
 }
 
 #scroll-down-icon {
@@ -204,6 +206,10 @@ footer{
 	#nav-bar-2 li a {
 		padding: 20px 52px;
 	}
+	.ieee-logo {
+		height: 80px;
+		width: 273.504px;
+	}
 }
 @media screen and (max-width: 860px) {
 	#nav-bar-2 li a {
@@ -218,6 +224,13 @@ footer{
 @media screen and (max-width: 690px) {
 	#nav-bar-2 li a {
 		padding: 20px 35px;
+	}
+	.ieee-logo {
+		height: 60px;
+		width: 205.128px;
+	}
+	#container-1 {
+		font-size: 24px;
 	}
 }
 @media screen and (max-width: 620px) {
@@ -240,6 +253,25 @@ footer{
 		padding: 20px 18px;
 	}
 }
-
-
-
+@media screen and (max-width: 400px) {
+	#nav-bar-2 li a {
+		padding: 20px 14px;
+	}
+	.ieee-logo {
+		height: 50px;
+		width: 170.940px;
+	}
+	#container-1 {
+		font-size: 21px;
+	}
+}
+@media screen and (max-width: 360px) {
+	#nav-bar-2 li a {
+		padding: 16px 10px;
+	}
+}
+@media screen and (max-width: 320px) {
+	#nav-bar-2 li a {
+		padding: 16px 8px;
+	}
+}
