@@ -23,9 +23,12 @@ body {
 
 
 .row .column {
-    float: left;
     width: 45%;
-    margin: 1.5%;
+    margin: 1%;
+}
+
+.column {
+    display: inline-block;
 }
 
 .imgBox {
@@ -108,8 +111,8 @@ body {
 
 @media (max-width: 640px) {
     .row .column {
-        width: 90%;
-        float: none;
+        width: 95%;
+        
     }
     .container {
         margin: 0 4%;
