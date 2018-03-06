@@ -77,16 +77,22 @@ $('a[href*="#"]')
     $("#container-2").hide().load('../../about-us.html').fadeIn(1200);
     if(curr_active!="#home"){
       $(curr_active).removeClass("active");
+      $(curr_active2).removeClass("active");
       $("#home").addClass("active");
+      $("#home2").addClass("active");
       curr_active="#home";
+      curr_active2="#home2";
     }
   })
   $("#members").click(function(){
     $('#container-2').hide().load('../../members.html').fadeIn(600);
     if(curr_active!="#members"){
       $(curr_active).removeClass("active");
+      $(curr_active2).removeClass("active");
       $("#members").addClass("active");
+      $("#members2").addClass("active");
       curr_active="#members";
+      curr_active2="#members2";
     }
   });
   $("#about-us").click(function(){
@@ -95,6 +101,9 @@ $('a[href*="#"]')
       $(curr_active).removeClass("active");
       $("#about-us").addClass("active");
       curr_active="#about-us";
+      $(curr_active2).removeClass("active");
+      $("#about-us2").addClass("active");
+      curr_active2="#about-us2";
     }
   });
   $("#event").click(function(){
@@ -103,6 +112,9 @@ $('a[href*="#"]')
       $(curr_active).removeClass("active");
       $("#event").addClass("active");
       curr_active="#event";
+      $(curr_active2).removeClass("active");
+      $("#event2").addClass("active");
+      curr_active2="#event2";
     }
   });
 
@@ -113,6 +125,9 @@ $('a[href*="#"]')
       $(curr_active).removeClass("active");
       $("#pg").addClass("active");
       curr_active="#pg";
+       $(curr_active2).removeClass("active");
+      $("#pg2").addClass("active");
+      curr_active2="#pg2";
     }
   });
   $('#contact-us').click(function(){
@@ -121,6 +136,9 @@ $('a[href*="#"]')
       $(curr_active).removeClass("active");
       $("#contact-us").addClass("active");
       curr_active="#contact-us";
+      $(curr_active2).removeClass("active");
+      $("#contact-us2").addClass("active");
+      curr_active2="#contact-us2";
     }
   });
   
@@ -131,6 +149,9 @@ $('a[href*="#"]')
       $(curr_active2).removeClass("active");
       $("#home2").addClass("active");
       curr_active2="#home2";
+      $(curr_active).removeClass("active");
+      $("#home").addClass("active");
+      curr_active="#home";
     }
   })
   $("#members2").click(function(){
@@ -139,6 +160,9 @@ $('a[href*="#"]')
       $(curr_active2).removeClass("active");
       $("#members2").addClass("active");
       curr_active2="#members2";
+      $(curr_active).removeClass("active");
+      $("#members").addClass("active");
+      curr_active="#members";
     }
   });
   $("#about-us2").click(function(){
@@ -147,6 +171,9 @@ $('a[href*="#"]')
       $(curr_active2).removeClass("active");
       $("#about-us2").addClass("active");
       curr_active2="#about-us2";
+      $(curr_active).removeClass("active");
+      $("#about-us").addClass("active");
+      curr_active="#about-us";
     }
   });
   $("#event2").click(function(){
@@ -155,6 +182,9 @@ $('a[href*="#"]')
       $(curr_active2).removeClass("active");
       $("#event2").addClass("active");
       curr_active2="#event2";
+      $(curr_active).removeClass("active");
+      $("#event").addClass("active");
+      curr_active="#event";
     }
   });
 
@@ -165,6 +195,9 @@ $('a[href*="#"]')
       $(curr_active2).removeClass("active");
       $("#pg2").addClass("active");
       curr_active2="#pg2";
+      $(curr_active).removeClass("active");
+      $("#pg").addClass("active");
+      curr_active="#pg";
     }
   });
   $('#contact-us2').click(function(){
@@ -173,6 +206,9 @@ $('a[href*="#"]')
       $(curr_active2).removeClass("active");
       $("#contact-us2").addClass("active");
       curr_active2="#contact-us2";
+      $(curr_active).removeClass("active");
+      $("#contact-us").addClass("active");
+      curr_active="#contact-us";
     }
   });
   
