@@ -1,12 +1,39 @@
 body {
-    background: #1A477E;
     vertical-align: middle;
+    background: linear-gradient(275deg,#1A2360, #283593,#283593, #1A2360);
+    background-size: 1000% 1000%;
+    /*  303F9F*/
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-o-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes gradientAnimation { 
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
 }
 
 #container {
     vertical-align: middle;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto Condensed', sans-serif;
     margin: 15vh auto;
     width: 90%;
 }
@@ -18,7 +45,9 @@ body {
 }
 
 #container p {
-    font-size: 15px;
+    font-size: 16px;
+    text-align: justify;    
+    font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
     padding-left: 20px;
     border-left: 5px solid #0072A8;
