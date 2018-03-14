@@ -3,6 +3,33 @@ body {
     padding: 0;
     background: #1A477E;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(275deg,#1A2360, #283593,#283593, #1A2360);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+}
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-o-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes gradientAnimation { 
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
 }
 
 .team {
@@ -59,7 +86,7 @@ body {
     float: left;
     box-sizing: border-box;
     overflow: hidden;
-    border-radius: 8px 8px 0 0;
+    
 }
 
 .row .column:before {
@@ -71,6 +98,7 @@ body {
     height: 100%;
     background: rgba(0, 114, 168,1);
     transition: 0.5s;
+    border-radius: 10px 10px 0 0;
     opacity: 0.3;
     z-index: 1;
 }
@@ -122,7 +150,6 @@ body {
     font-size: 14px;
     color: #0072A8;
     font-weight: 900;
-    text-transform: uppercase;
     position: relative;
     top: -6px;
 }
