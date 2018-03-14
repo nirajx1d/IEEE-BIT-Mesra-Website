@@ -29,8 +29,6 @@ html,body {
     padding: 20px 85px;
 	text-decoration: none;
 	font-family: 'Quicksand', sans-serif;
-	/* font-weight: 1000; */
-	/* font-family: 'Roboto-Condensed', sans-serif; */
 }
 
 #nav-bar li a:hover:not(.active) {
@@ -89,7 +87,9 @@ html,body {
 	margin-top: 0;
 	height: 65vh;
 	width: 100%;
-	background-image: url('../images/bit_main_4.jpg'); 
+	/* background-image: url('../images/bit_main.jpg');  */
+	background: linear-gradient(rgba(0, 0, 0, 0.80),rgba(88, 185, 253, 0.60)),
+	url('../images/bit_main.jpg'); 
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
@@ -115,7 +115,6 @@ html,body {
 #scroll-down-icon {
 	height:30px; 
 	width: 70px;
-	/*The animation part..*/ 
 	animation: animate 1s linear infinite;
 }
 
