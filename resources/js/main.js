@@ -1,9 +1,3 @@
-function mytoast() {
-    var x = document.getElementById("snackbar")
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-}
-
 $(document).ready(function(){
   $('#container-2').load('../../about-us.html').fadeIn('slow');
   
