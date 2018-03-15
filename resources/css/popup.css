@@ -1,0 +1,81 @@
+body {
+    transition: 2s ease-in-out;
+}
+
+/* Outer */#mySidenav .btn {
+    position: absolute;
+    left: -113px;
+    transition: 0.3s;
+    padding: 15px;
+    width:130px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    top: 20vh;
+    background: #282828;
+}
+
+#mySidenav .btn span {
+    background: #77C9EC;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+}
+
+#mySidenav .btn:hover {
+    left: 0;
+}
+
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+    z-index: 50;
+}
+
+    /* Inner */
+.popup-inner {
+    color: black;
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#d1d3d6;
+    opacity: 0.85;
+}
+#cloreg{
+    text-align: center;
+}
+#cloreg a{
+    text-decoration: none;
+    margin: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background: #019ED9;
+    padding: 10px;
+    border-radius: 4px;
+}
+.popup-inner h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width:420px) {
+    #cloreg a{
+        margin: 10%;
+    }
+    #mySidenav .btn {
+        width: 135px;
+    }
+}
