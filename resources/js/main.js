@@ -5,9 +5,6 @@ function mytoast() {
 }
 
 $(document).ready(function(){
-  $('#main-text').hide().delay(400).fadeIn('slow');
-  $('.ieee-logo').hide().delay(400).fadeIn('slow');
-  $('#scroll-down-icon').hide().delay(800).fadeIn('slow');
   $('#container-2').load('../../about-us.html').fadeIn('slow');
   
   //Below code block is for smooth scrolling on clicking of internal links  
@@ -47,16 +44,6 @@ $('a[href*="#"]')
     }
   }
 });
-
-  //Hover effect on the ieee-logo
-  $('.ieee-logo').hover(
-    function(){
-      $(this).animate({width: '+=6.83px'},{duration: 100, queue: false}).animate({height: '+=2px'},{duration: 100, queue: false});
-    },
-    function(){
-      $(this).animate({width: '-=6.83px'},{duration: 100, queue: false}).animate({height: '-=2px'},{duration: 100, queue: false});
-    }
-  );
 
   //when height is greater than 40px then shrink class is added to nav bar
   $(window).scroll(function() {
