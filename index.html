@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
+	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="footer, address, phone, icons" />
-	<title>IEEE|BIT Mesra</title>
+	<title>IEEE | BIT Mesra</title>
 
 	<link rel="stylesheet" href="resources/css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -26,7 +26,7 @@
 <ul id="nav-bar" align="center">
 <!--nav bar unorder list float:left -->
   <li><a class="active" id="home" href="#container-1">HOME</a></li>
-  <li><a id="projects" onclick="mytoast()" style=" cursor: pointer;">PROJECTS</a></li>
+  <li><a id="projects" href="#container-2">PROJECTS</a></li>
   <li><a id="event" href="#container-2">EVENTS</a></li>
   <li><a id="pg" href="#container-2">PHOTO GALLERY</a></li>
   <li><a id="members" href="#container-2">MEMBERS</a></li>
@@ -38,7 +38,7 @@
 	<ul id="nav-bar-2" align="center">
 		<!--nav bar unorder list float:left -->
 		<li><a class="active" id="home2" href="#container-1"><i class="fa fa-home"></i></a></li>
-		<li><a id="projects2" onclick="mytoast()"><i class="fa fa-cubes"></i></a></li>
+		<li><a id="projects2" href="#container-2"><i class="fa fa-cubes"></i></a></li>
 		<li><a id="event2" href="#container-2"><i class="fa fa-calendar"></i></a></li>
 		<li><a id="pg2" href="#container-2"><i class="fa fa-image"></i></a></li>
 		<li><a id="members2" href="#container-2"><i class="fa fa-users"></i></a></li>
@@ -49,13 +49,17 @@
 </div>
 <!--Side nav bar with toast function-->
 <div id="mySidenav" class="sidenav">
-	<a class="btn" data-popup-open="popup-1" href="#" onclick="open_popup();">Notification <span>1</span></a>
+	<a class="btn" data-popup-open="popup-1" href="#" onclick="open_popup();" style="font-family: 'Roboto', sans-serif;">Notification &nbsp;&nbsp;<span>1</span></a>
 	<div class="popup bounceInDown animated" data-popup="popup-1">
 		<div class="popup-inner">
-			<h3>Data Structures Workshop</h3>
+			<h2>Data Structures Workshop</h2>
 			<br>
+			<div class="poster">
+				<img src="resources/images/ds-poster.jpeg"><br>
+			</div>
 			<div id='cloreg'>
-				<a id='reg_btn'>Register</a>
+				<br>
+				<a href="#container-2" id="downloads-btn" onclick="close_popup();">Download PPTs</a>
 				<a href="#" onclick="close_popup();">Close</a>
 			</div>
 		</div>
@@ -67,22 +71,20 @@
 	<div id="container-1">
 		<span><a href="https://www.ieee.org/" target="_blank"><img class="ieee-logo fadeInDown animated" src="resources/images/ieee-logo.png" alt="logo"></a>
 		<p id="main-text" class="fadeInDown animated"><strong>STUDENT CHAPTER BIT MESRA</strong></p></span>
-		<!-- <a href="#container-2" id="slider"><img id="scroll-down-icon" src="resources/images/scroll_down.png"></a> -->
 	</div>
 	<div id="container-2"></div>
-
-	<div></div>
 
 <footer class="footer-distributed" id="foot">
 	<div class="footer-left">
 		<h3>IEEE |<span>| BIT MESRA</span></h3>
 		<p class="footer-links">
-			<a href="https://spectrum.ieee.org/" target="_blank">·IEEE Spectrum</a>
-			<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">·IEEE Xplore</a>
-			<a href="http://standards.ieee.org/" target="_blank">·IEEE Standards</a>
-			<a href="http://www.ieeer10.org/" target="_blank">·IEEE Region10</a>
+			<a href="https://spectrum.ieee.org/" target="_blank">¡¤IEEE Spectrum</a>
+			<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">¡¤IEEE Xplore</a>
+			<a href="http://standards.ieee.org/" target="_blank">¡¤IEEE Standards</a>
+			<a href="http://www.ieeer10.org/" target="_blank">¡¤IEEE Region10</a>
 		</p>
 		<p class="footer-company-name">COPYRIGHT &copy; 2018</p>
+		<p class="developers"> Developed by <a href="https://www.facebook.com/shubham.jawandhiya" target=_blank> Shubham Jawandhiya </a><a href="https://www.facebook.com/satyam.agrawaal.88" target=_blank> Satyam Agrawaal </a><a href="https://www.facebook.com/Niraj.1d" target=_blank> Niraj Shubham </a> </p>
 	</div>
 	<div class="footer-center">
 		<div>
@@ -91,7 +93,7 @@
 		</div>
 		<div>
 			<i class="fa fa-phone"></i>
-			<p>PABX: +91 651 2275444/2275896</p>
+			<p>Phone: +91 9955924644</p>
 		</div>
 		<div>
 			<i class="fa fa-globe	"></i>
@@ -105,8 +107,7 @@
 		</p>
 		<div class="footer-icons">
 			<a href="https://www.facebook.com/ieeebitmesra/" target="_blank"><i class="fa fa-facebook"></i></a>
-			<a href="https://twitter.com/ieeeorg?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
-			<a href="https://in.linkedin.com/company/ieee" target="_blank"><i class="fa fa-linkedin"></i></a>
+			<a href="#" ><i class="fa fa-envelope" aria-hidden="true"></i></a>
 		</div>
 	</div>
 </footer>
