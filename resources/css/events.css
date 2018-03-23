@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
     background: linear-gradient(275deg, #1A2360, #283593,#283593, #1A2360);
     background-size: 1000% 1000%;
@@ -31,9 +32,8 @@ body {
 }
 
 .container {
-    margin: 0 2%;
     position: relative;
-    
+    text-align: center;
 }
 
 .container h1 {
@@ -57,17 +57,37 @@ body {
     display: inline-block;
 }
 
+.row .column-small {
+    width: 22%;
+    margin: 0.7%;
+}
+
+.column-small {
+    display: inline-block;
+}
+
 .imgBox {
     position: relative;
     background-size: cover;
     border: 2px solid #fff;
     overflow: hidden;
+    padding-top: 52.2396%;
+}
+
+.column-small .imgBox {
+    padding-top: 118.8489%;
 }
 
 .imgBox img {
     width: 100%;
     transition: .5s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
+
 
 .in-container {
     position: absolute;
@@ -92,6 +112,7 @@ body {
 }
 
 .content {
+    cursor: default;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -126,19 +147,32 @@ body {
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 840px) {
     .content p {
         font-size: 0.8em;
     }
     .content h1 {
-        font-size: 1.2em;
+        font-size: 0.9em;
+    }
+    .row .column {
+        width: 96%;
+    }
+    .row .column-small {
+        width: 45%;
+        margin: 2.2%;
     }
 }
 
 @media (max-width: 640px) {
-    .row .column {
-        width: 95%;
-        
+    .row .column-small {
+        width: 97%;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+    .content h1 {
+        font-size: 1.2em;
     }
     .container {
         margin: 0 4%;
@@ -156,7 +190,7 @@ body {
 }
 
 .imgBox:hover img {
-    transform: scale(2);
+    transform: scale(1.02);
 }
 
 .imgBox:hover .in-container:before {
