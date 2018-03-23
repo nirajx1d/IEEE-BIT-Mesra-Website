@@ -4,10 +4,10 @@ body {
 
 /* Outer */#mySidenav .btn {
     position: absolute;
-    left: -113px;
+    left: -120px;
     transition: 0.3s;
     padding: 15px;
-    width:130px;
+    width:145px;
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -17,8 +17,9 @@ body {
 }
 
 #mySidenav .btn span {
-    background: #77C9EC;
+    background: #fff;
     padding-left: 5px;
+    color: #282828;
     padding-right: 5px;
     border-radius: 50%;
 }
@@ -52,28 +53,40 @@ body {
     border-radius:3px;
     background:#d1d3d6;
     opacity: 0.85;
+    text-align: center;
 }
 #cloreg{
     text-align: center;
 }
 #cloreg a{
     text-decoration: none;
+    color: #fff;
     margin: 15%;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     background: #019ED9;
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 2px;
 }
-.popup-inner h3{
+
+#cloreg a:hover {
+    background-color: #282828;
+}
+
+.popup-inner h2{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 
+.poster img {
+    width: 80%;
+    height: auto;
+}
+
 @media screen and (max-width:420px) {
     #cloreg a{
-        margin: 10%;
+        margin: 0%;
     }
     #mySidenav .btn {
         width: 135px;
