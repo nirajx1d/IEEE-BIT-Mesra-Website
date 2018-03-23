@@ -1,4 +1,3 @@
-
 function close_popup(){
     $('.popup').toggle();
     $('.ieee-logo').toggle();
