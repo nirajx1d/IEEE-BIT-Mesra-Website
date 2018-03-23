@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(275deg,#1A2360, #283593,#283593, #1A2360);
+    background-size: 1000% 1000%;
+    
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-o-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes gradientAnimation { 
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+
+
+.row {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.row h1 {
+    text-transform: uppercase;
+    font-size: 42px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 10vh auto;
+}
+
+.mgt50px {
+    margin-top: 50px;
+}

@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(275deg, #1A2360, #283593,#283593, #1A2360);
+    background-size: 1000% 1000%;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-o-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes gradientAnimation { 
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+
+.content {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    text-transform: uppercase;
+    
+}
+
+.text {
+    float: left;
+    margin: 7% 4%;
+}
+
+.text p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.imgBox {
+    margin: 10px 3%;
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.imgBox img {
+    width: 100%;
+    opacity: .8;
+}
+
+.text ul li {
+    list-style-type: none;
+    margin: 20px 2px;
+}
+
+.text ul li a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none; 
+    background: #0072A8;
+    padding: 7px 50px;
+    transition: 1s;
+}
+
+.text ul li .inactive {
+    background-color: #283593;
+}
+
+.text ul li a:hover {
+    background-color: #262626;
+}
+
+.text ul li .inactive:hover {
+    background-color: #283563;
+    cursor: default;
+}
+
+.mgt50px {
+    margin-top: 50px;
+}
+
+@media (max-width: 860px) {
+    .imgBox {
+        float: none;
+        width: 85%;
+        margin: auto;
+    }
+    .text {
+        float: none;
+    }
+    .content {
+        text-align: center;
+    }
+}
