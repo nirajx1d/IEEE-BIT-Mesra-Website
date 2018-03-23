@@ -55,7 +55,7 @@ $('a[href*="#"]')
 
   var curr_active="#home"; 
   $("#home").click(function(){
-    $("#container-2").hide().load('../../about-us.html').fadeIn(1200);
+    $("#container-2").hide().load('../../about-us.html').fadeIn(600);
     if(curr_active!="#home"){
       $(curr_active).removeClass("active");
       $(curr_active2).removeClass("active");
@@ -64,7 +64,19 @@ $('a[href*="#"]')
       curr_active="#home";
       curr_active2="#home2";
     }
-  })
+  });
+  $("#projects").click(function(){
+    $("#container-2").hide().load('../../mega-project.html').fadeIn(10);
+    if(curr_active!="#projects"){
+      $(curr_active).removeClass("active");
+      $(curr_active2).removeClass("active");
+      $("#projects").addClass("active");
+      $("#projects2").addClass("active");
+      curr_active="#projects";
+      curr_active2="#projects2";
+    }
+  });
+
   $("#members").click(function(){
     $('#container-2').hide().load('../../members.html').fadeIn(600);
     if(curr_active!="#members"){
@@ -122,10 +134,33 @@ $('a[href*="#"]')
       curr_active2="#contact-us2";
     }
   });
+  $("#downloads").click(function(){
+    $('#container-2').hide().load('../../downloads.html').fadeIn(600);
+    if(curr_active!="#downloads"){
+      $(curr_active).removeClass("active");
+      $(curr_active2).removeClass("active");
+      $("#downloads").addClass("active");
+      $("#downloads2").addClass("active");
+      curr_active="#downloads";
+      curr_active2="#downloads2";
+    }
+  });
+  $("#downloads-btn").click(function(){
+    $('#container-2').hide().load('../../downloads.html').fadeIn(600);
+    if(curr_active!="#downloads"){
+      $(curr_active).removeClass("active");
+      $(curr_active2).removeClass("active");
+      $("#downloads").addClass("active");
+      $("#downloads2").addClass("active");
+      curr_active="#downloads";
+      curr_active2="#downloads2";
+    }
+  });
+
   
   var curr_active2=curr_active+"2"; 
   $("#home2").click(function(){
-    $("#container-2").hide().load('../../about-us.html').fadeIn(1200);
+    $("#container-2").hide().load('../../about-us.html').fadeIn(600);
     if(curr_active2!="#home2"){
       $(curr_active2).removeClass("active");
       $("#home2").addClass("active");
@@ -134,7 +169,19 @@ $('a[href*="#"]')
       $("#home").addClass("active");
       curr_active="#home";
     }
-  })
+  });
+  $("#projects2").click(function(){
+    $("#container-2").hide().load('../../mega-project.html').fadeIn(10);
+    if(curr_active2!="#projects2"){
+      $(curr_active2).removeClass("active");
+      $("#projects2").addClass("active");
+      curr_active2="#projects2";
+      $(curr_active).removeClass("active");
+      $("#projects").addClass("active");
+      curr_active="#projects";
+    }
+  });
+  
   $("#members2").click(function(){
     $('#container-2').hide().load('../../members.html').fadeIn(600);
     if(curr_active2!="#members2"){
@@ -182,7 +229,7 @@ $('a[href*="#"]')
     }
   });
   $('#contact-us2').click(function(){
-    $('#container-2').hide().load('../../contact-us.html').fadeIn(600);
+    $('#container-2').hide().load('../../contact-us.html').fadeIn(100);
     if(curr_active2!="#contact-us2"){
       $(curr_active2).removeClass("active");
       $("#contact-us2").addClass("active");
@@ -192,8 +239,16 @@ $('a[href*="#"]')
       curr_active="#contact-us";
     }
   });
-  
-
-  
+  $('#downloads2').click(function(){
+    $('#container-2').hide().load('../../downloads.html').fadeIn(100);
+    if(curr_active2!="#downloads2"){
+      $(curr_active2).removeClass("active");
+      $("#downloads2").addClass("active");
+      curr_active2="#downloads2";
+      $(curr_active).removeClass("active");
+      $("#downloads").addClass("active");
+      curr_active="#downloads";
+    }
+  });
 });
 
