@@ -2,7 +2,6 @@ body {
     vertical-align: middle;
     background: linear-gradient(275deg,#1A2360, #283593,#283593, #1A2360);
     background-size: 1000% 1000%;
-    /*  303F9F*/
     -webkit-animation: gradientAnimation 10s ease infinite;
     -moz-animation: gradientAnimation 10s ease infinite;
     -o-animation: gradientAnimation 10s ease infinite;
