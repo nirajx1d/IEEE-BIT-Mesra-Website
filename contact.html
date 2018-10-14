@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us | IEEE BIT Mesra</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/contact.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        $('#name_error_msg').hide();
+        $('#email_error_msg').hide();
+        $('#phone_error_msg').hide();
+        $('#message_error_msg').hide();
+
+        var name_error =false;
+        var email_error =false;
+        var phone_error =false;
+        var message_error =false;
+
+        $('#name').focusout(function(){
+            check_name();
+        });
+        $('#email').focusout(function(){
+            check_email();
+        });
+        $('#phone').focusout(function(){
+            check_phone();
+        });
+        $('#message').focusout(function(){
+            check_message();
+        });
+
+        function check_name() {
+            var name = $('#name').val();
+            if(name!='') {
+                $('#name_error_msg').hide();
+            }
+            else {
+                    $('#name_error_msg').html("Name field cannot be empty.");
+                    $('#name_error_msg').show();
+                    name_error=true;
+            }
+
+        }
+
+        function check_email() {
+            var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            var email = $('#email').val();
+            if(pattern.test(email)&&email!='') {
+                $('#email_error_msg').hide();
+            }
+            else {
+                $('#email_error_msg').html("Invalid email.");
+                $('#email_error_msg').show();
+                email_error=true;
+            }
+        }
+
+        function check_phone() {
+            var pattern = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+            var phone = $('#phone').val();
+            if(pattern.test(phone)&&phone!='') {
+                $('#phone_error_msg').hide();
+            }
+            else {
+                $('#phone_error_msg').html("Invalid phone number.");
+                $('#phone_error_msg').show();
+                phone_error=true;
+            }
+        }
+
+        function check_message() {
+            message = $('#message').val();
+            if(message!='') {
+                $('#message_error_msg').hide();
+            }
+            else {
+                $('#message_error_msg').html("Message field cannot be empty.");
+                $('#message_error_msg').show();
+                message_error=true;
+            }
+        }
+
+        $('.mailbtn').click(function() {
+            name_error=false;
+            email_error=false;
+            phone_error=false;
+            message_error=false;
+
+            check_name();
+            check_email();
+            check_phone();
+            check_message();
+
+            if(name_error==false && email_error==false && phone_error==false && message_error==false) {
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var phone = $('#phone').val();
+                var message = $('#message').val();
+                $('.result').css("display","block");
+                    
+                $.ajax({
+                    type: "POST",
+                    url:'form_action.php',
+                    data: {name : name, email : email, phone : phone, message : message},
+                    success: function() {
+					alert("Message Sent!");
+				}
+                });
+            }
+            else {
+                alert("Please fill the form correctly.");
+            }
+        });
+    });
+
+</script>
+</head>
+<body>
+    
+    <div class="form">
+        <h1>Contact Us  
+            <div class="contact-icons">
+                    <a href="mailto:contact@ieeebitmesra.in" target="_blank"><i class="fa fa-envelope contact-mail-icon" aria-hidden="true"></i></a>
+                    <a href="https://facebook.com/ieeebitmesra" target="_blank"><i class="fa fa-facebook-official contact-fb-icon" aria-hidden="true"></i></a>
+            </div>
+        </h1>
+        <div class="mgb50px">
+            <p type="Name:" class="field">
+                <input placeholder="Write your name here..." name="name" id="name"></input>
+                <span class="error" id="name_error_msg"></span>
+            </p>
+            <p type="Email:" class="field">
+                <input placeholder="Your email Address..." name="email" id="email"></input>
+                <span class="error" id="email_error_msg"></span>
+            </p>
+            <p type="Phone:" class="field">
+                <input placeholder="Your phone number..." name="phone" id="phone"></input>
+                <span class="error" id="phone_error_msg"></span>
+            </p>        
+            <p type="Message:" class="field last">
+                <input placeholder="What would you like to tell us..." name="message" id="message"></input>
+                <span class="error" id="message_error_msg"></span>
+            </p>
+            <p class="result">
+                <span><i class="fa fa-check-circle-o" aria-hidden="true"></i></span>Thank you for contacting. We'll be with you shortly...
+            </p>
+            <button class="mailbtn">Send Message</button>
+            <br>
+            <div class="email">
+            <span class="fa fa-envelope-o"></span> contact@ieeebitmesra.in
+            </div>
+        </div>
+    </div>
+</body>
+</html>
