@@ -39,6 +39,8 @@ $('a[href*="#"]')
   }
 });
 
+
+
   //when height is greater than 40px then shrink class is added to nav bar
   $(window).scroll(function() {
     if($(document).scrollTop() > 40) {
@@ -112,7 +114,7 @@ $('a[href*="#"]')
   });
 
   $('#pg').click(function(){
-    $('#container-2').hide().load('../../photo-gallery.html').fadeIn(600);
+    $('#container-2').hide().load('../../gallery.html').fadeIn(600);
     $('#container-2').css("height","auto");
     if(curr_active!="#pg"){
       $(curr_active).removeClass("active");
@@ -124,7 +126,7 @@ $('a[href*="#"]')
     }
   });
   $('#contact-us').click(function(){
-    $('#container-2').hide().load('../../contact-us.html').fadeIn(600);
+    $('#container-2').hide().load('../../contact.html').fadeIn(600);
     if(curr_active!="#contact-us"){
       $(curr_active).removeClass("active");
       $("#contact-us").addClass("active");
@@ -145,6 +147,7 @@ $('a[href*="#"]')
       curr_active2="#downloads2";
     }
   });
+  
   $("#downloads-btn").click(function(){
     $('#container-2').hide().load('../../downloads.html').fadeIn(600);
     if(curr_active!="#downloads"){
@@ -217,7 +220,7 @@ $('a[href*="#"]')
   });
 
   $('#pg2').click(function(){
-    $('#container-2').hide().load('../../photo-gallery.html').fadeIn(600);
+    $('#container-2').hide().load('../../gallery.html').fadeIn(600);
     $('#container-2').css("height","auto");
     if(curr_active2!="#pg2"){
       $(curr_active2).removeClass("active");
@@ -229,7 +232,7 @@ $('a[href*="#"]')
     }
   });
   $('#contact-us2').click(function(){
-    $('#container-2').hide().load('../../contact-us.html').fadeIn(100);
+    $('#container-2').hide().load('../../contact.html').fadeIn(100);
     if(curr_active2!="#contact-us2"){
       $(curr_active2).removeClass("active");
       $("#contact-us2").addClass("active");
@@ -250,5 +253,19 @@ $('a[href*="#"]')
       curr_active="#downloads";
     }
   });
+
+  $(".sidenav").click(function(){
+    $('#container-2').hide().load('../../downloads.html').fadeIn(600);
+    if(curr_active!="#downloads"){
+      $(curr_active).removeClass("active");
+      $(curr_active2).removeClass("active");
+      $("#downloads").addClass("active");
+      $("#downloads2").addClass("active");
+      curr_active="#downloads";
+      curr_active2="#downloads2";
+    };
 });
+
+});
+
 
