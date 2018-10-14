@@ -1,0 +1,211 @@
+body {
+    margin:0;
+    padding: 0;
+    background: linear-gradient(275deg,#1A2360, #283593,#283593, #1A2360);
+    background-size: 1000% 1000%;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@-o-keyframes gradientAnimation {
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+@keyframes gradientAnimation { 
+    0%{background-position:0% 54%}
+    50%{background-position:100% 47%}
+    100%{background-position:0% 54%}
+}
+
+.form {
+    width:50%;
+    height:100%;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(45vh - 250px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 20px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+
+h1 { 
+    text-transform: uppercase;
+    margin-top:15px;
+    margin-bottom: 30px;
+    padding-bottom:10px;
+    color:#78788c;
+    border-bottom:3px solid #78788c;
+}
+
+.contact-icons {
+    float: right;
+    font-size: 40px;
+}
+
+.contact-icons a {
+    color: #262626;
+}
+
+.contact-icons i {
+    padding: 5px 10px;
+}
+
+.contact-mail-icon:hover {
+    color: #b2392f;
+    transition: all .75s
+}
+.contact-fb-icon:hover {
+    color: #3c5a99;
+    transition: all .75s;
+}
+
+.mgb50px {
+    margin-bottom: 50px;
+}
+
+input {
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+
+input:focus {
+    border-bottom:2px solid #78788c
+}
+
+.field:before { 
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+
+.last {
+    margin-bottom: 70px;
+}
+
+.mailbtn {
+    float:right;
+    position: relative;
+    top: -20px;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .75s
+}
+
+.mailbtn:hover {
+    background:#78788c;
+    color:#fff
+}
+
+.result {
+    display: none;
+    color: green;
+}
+
+.email {
+    text-align: center;
+    content:'Hi';
+    position:absolute;
+    bottom:-25px;
+    right:-25px;
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+
+@media (max-width: 800px) {
+    .form {
+        width: 70%;
+    }
+    .mailbtn {
+        top: -15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .email {
+        width: 300px;
+    }
+    .contact-icons {
+        font-size: 35px;
+    }
+    .contact-icons i {
+        padding: 3px 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 24px;
+    }
+    .field:before {
+        font-size: 12px;
+    }
+    .email {
+        font-size: 10px;
+        width: 250px;
+    }
+    .contact-icons {
+        font-size: 30px;
+        float: none;
+    }
+    .contact-icons i {
+        padding: 2px 2px;
+    }
+}
+
+@media (max-width: 360px) {
+    .form {
+        width: 80%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .field:before {
+        font-size: 10px;
+    }
+    .email {
+        width: 220px;
+        font-size: 12px;
+    }
+}
