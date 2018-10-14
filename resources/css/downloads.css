@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Condensed', sans-serif;
-    background: linear-gradient(275deg, #1A2360, #283593,#283593, #1A2360);
+    font-family:'Roboto Condensed', sans-serif;
+    background: linear-gradient(275deg,#1A2360, #283593,#283593, #1A2360);
     background-size: 1000% 1000%;
     -webkit-animation: gradientAnimation 10s ease infinite;
     -moz-animation: gradientAnimation 10s ease infinite;
@@ -31,82 +31,93 @@ body {
     100%{background-position:0% 54%}
 }
 
-.content {
-    display: inline-block;
+
+.header h1 {
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 42px;
+.mgt30px {
+    margin-top: 30px;
+}
+
+.mgb30px {
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto 50px auto;
+}
+
+.box {
+    background-color: #e6e6e6;
+    padding: 20px 40px 40px 40px;
+    border-radius: 10px;
+    font-family:'Montserrat',sans-serif;
+    box-shadow:0 0 40px -10px #000;
+
+}
+
+.box h1 {
     text-transform: uppercase;
-    
+    font-size: 26px;
+    color: #78788c;
+}
+
+.subheading {
+    font-size: 18px;
 }
 
 .text {
-    float: left;
-    margin: 7% 4%;
+    font-size: 16px;
 }
 
-.text p {
+.download-btn {
+    color: #78788c;
+    padding: 10px 30px;
+    border: #78788c solid 3px;
+    text-decoration: none;
+    transition: .5s;
+    margin: 1px;
+    font-size: 16px;
+}
+
+.download-btn:hover {
+    background-color: #78788c;
     color: #fff;
-    text-transform: uppercase;
-    font-size: 26px;
 }
 
-.imgBox {
-    margin: 10px 3%;
-    width: 50%;
-    height: auto;
-    float: left;
-}
-
-.imgBox img {
-    width: 100%;
-    opacity: .8;
-}
-
-.text ul li {
-    list-style-type: none;
-    margin: 20px 2px;
-}
-
-.text ul li a {
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none; 
-    background: #0072A8;
-    padding: 7px 50px;
-    transition: 1s;
-}
-
-.text ul li .inactive {
-    background-color: #283593;
-}
-
-.text ul li a:hover {
-    background-color: #262626;
-}
-
-.text ul li .inactive:hover {
-    background-color: #283563;
-    cursor: default;
-}
-
-.mgt50px {
-    margin-top: 50px;
-}
-
-@media (max-width: 860px) {
-    .imgBox {
-        float: none;
-        width: 85%;
-        margin: auto;
+@media (max-width: 600px) {
+    .box {
+        padding: 15px 25px 25px 25px;
+    }
+    .header h1 {
+        font-size: 36px;
+    }
+    .box h1 {
+        font-size: 20px;
+    }
+    .subheading {
+        font-size: 14px;
     }
     .text {
-        float: none;
+        font-size: 13px;
     }
-    .content {
+    .download-btn {
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .download-btn {
+        padding: 5px 20px;
+        display: block;
+        width: 30%;
+        margin: 3px auto;
         text-align: center;
     }
 }
