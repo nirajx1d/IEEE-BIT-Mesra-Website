@@ -1,11 +1,12 @@
-function close_popup(){
-    $('.popup').toggle();
-    $('.ieee-logo').toggle();
-    $('#main-text').toggle();
-}
+$(function() {
+  $('.pop-up').hide();
+  $('.pop-up').delay(5000).fadeIn(1000);
 
-function open_popup(){
-    $('.popup').css("display","block");
-    $('.ieee-logo').toggle();
-    $('#main-text').toggle();
-}
+      $('.close-button').click(function (e) {
+
+      $('.pop-up').fadeOut(700);
+      $('#overlay').removeClass('blur-in');
+      $('#overlay').addClass('blur-out');
+      e.stopPropagation();
+    });
+ });
