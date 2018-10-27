@@ -1,2 +1,2 @@
 # IEEE-BIT-Mesra-Website
-Website for our technical club IEEE Student Chapter BIT Mesra.
+A website for our technical club IEEE Student Chapter BIT Mesra.
