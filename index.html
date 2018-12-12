@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
 	<meta name="description" content="Welcome to the Official IEEE Student Branch BIT Mesra Website. IEEE Student Branch BIT Mesra is a registered student branch under IEEE Region 10 Kolkata Region.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,104 +20,113 @@
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="resources/css/footer-distributed-with-address-and-phones.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
-
 	<script
 	  src="https://code.jquery.com/jquery-3.3.1.js"
 	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	  crossorigin="anonymous"></script>
 	<script type="text/javascript" src="resources/js/main.js"></script>
-  <script type="text/javascript" src="resources/js/popup.js"></script>
+  	<script type="text/javascript" src="resources/js/popup.js"></script>
 	<script type="text/javascript" src="resources/js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
 </head>
 <body>
+	<!--The whole website is divided into 3 parts.
+	The top part : container-1: Contains navbar and header
+	The middle part: container-2: The contents of this container change according to the tab
+	The bottom part: container-3: Contains the footer-->
 
-<a href="#container-1" ><button id="btn" title="Go to top" style="font-size: 18px; font-weight: bold;"><i class="fa fa-angle-up" aria-hidden="true"></i></button></a>
-<ul id="nav-bar" align="center">
-<!--nav bar unorder list float:left -->
-  <li><a class="active" id="home" href="#container-1">HOME</a></li>
-  <li><a id="projects" href="#container-2">MEGA PROJECT</a></li>
-  <li><a id="event" href="#container-2">EVENTS</a></li>
-  <li><a id="pg" href="#container-2">GALLERY</a></li>
-  <li><a id="members" href="#container-2">EXECUTIVE BODY</a></li>
-  <li><a id="downloads" href="#container-2">DOWNLOADS</a></li>
-  <li><a id="contact-us" href="#container-2">CONTACT US</a></li>
+	<!--Scroll the website down to see a upward pointing arrow at the bottom right corner.The following is the code for that up button-->
+	<a href="#container-1" ><button id="btn" title="Go to top" style="font-size: 18px; font-weight: bold;"><i class="fa fa-angle-up" aria-hidden="true"></i></button></a>
 
-</ul>
-<div id="nav-2">
-	<ul id="nav-bar-2" align="center">
-		<!--nav bar unorder list float:left -->
-		<li><a class="active" id="home2" href="#container-1"><i class="fa fa-home"></i></a></li>
-		<li><a id="projects2" href="#container-2"><i class="fa fa-code"></i></a></li>
-		<li><a id="event2" href="#container-2"><i class="fa fa-calendar"></i></a></li>
-		<li><a id="pg2" href="#container-2"><i class="fa fa-image"></i></a></li>
-		<li><a id="members2" href="#container-2"><i class="fa fa-users"></i></a></li>
-		<li><a id="downloads2" href="#container-2"><i class="fa fa-download"></i></a></li>
-		<li><a id="contact-us2" href="#container-2"><i class="fa fa-phone"></i></a></li>
-		<li><a id="blank"></a></li>
+	<!-- Code for navbar when the browser size is enough for the navbar titles-->
+	<ul id="nav-bar" align="center">
+	<!--nav bar unorder list float:left -->
+	  <li><a class="active" id="home" href="#container-1">HOME</a></li>
+	  <li><a id="projects" href="#container-2">MEGA PROJECT</a></li>
+	  <li><a id="event" href="#container-2">EVENTS</a></li>
+	  <li><a id="pg" href="#container-2">GALLERY</a></li>
+	  <li><a id="members" href="#container-2">EXECUTIVE BODY</a></li>
+	  <li><a id="downloads" href="#container-2">DOWNLOADS</a></li>
+	  <li><a id="contact-us" href="#container-2">CONTACT US</a></li>
 	</ul>
-</div>
-<!-- popup -->
-<div class="animated fadeInDown slower delay-2s pop-up">
-  <div class="pop-up-box small-6 large-centered">
-    <a href="#" class="close-button">&#10006;</a>
-    <h3>UPCOMING EVENT</h3>
-    <p>HACK-A-BIT <br>East India's Largest Hackathon.<br> 26th - 28th October 2018. </p>
-		<br>
-    <a target="_blank" href="https://hackabit.in" class="pop-up-button">Know More</a>
-  </div>
-</div>
-<!-- popup ends -->
+
+	<!-- Code for navbar when the browser size is less than reqquired for navbr titles-->
+	<div id="nav-2">
+		<ul id="nav-bar-2" align="center">
+			<!--nav bar unorder list float:left -->
+			<li><a class="active" id="home2" href="#container-1"><i class="fa fa-home"></i></a></li>
+			<li><a id="projects2" href="#container-2"><i class="fa fa-code"></i></a></li>
+			<li><a id="event2" href="#container-2"><i class="fa fa-calendar"></i></a></li>
+			<li><a id="pg2" href="#container-2"><i class="fa fa-image"></i></a></li>
+			<li><a id="members2" href="#container-2"><i class="fa fa-users"></i></a></li>
+			<li><a id="downloads2" href="#container-2"><i class="fa fa-download"></i></a></li>
+			<li><a id="contact-us2" href="#container-2"><i class="fa fa-phone"></i></a></li>
+			<li><a id="blank"></a></li>
+		</ul>
+	</div>
+	<!-- popup -->
+	<div class="animated fadeInDown slower delay-2s pop-up">
+	  <div class="pop-up-box small-6 large-centered">
+	    <a href="#" class="close-button">&#10006;</a>
+	    <h3>UPCOMING EVENT</h3>
+	    <p>HACK-A-BIT <br>East India's Largest Hackathon.<br> 26th - 28th October 2018. </p>
+			<br>
+	    <a target="_blank" href="https://hackabit.in" class="pop-up-button">Know More</a>
+	  </div>
+	</div>
+	<!-- popup ends -->
 
 	<div id="container-1">
-		<span><a href="https://www.ieee.org/" target="_blank"><img class="ieee-logo fadeInDown animated" src="resources/images/ieee-logo.png" alt="logo"></a>
-		<p id="main-text" class="fadeInDown animated"><strong>STUDENT BRANCH BIT MESRA</strong></p></span>
+		<span><a href="https://www.ieee.org/" target="_blank"><img class="ieee-logo fadeInDown animated" src="resources/images/ieee-logo.png" alt="logo"></a>			<p id="main-text" class="fadeInDown animated"><strong>STUDENT BRANCH BIT MESRA</strong></p></span>
+		<!-- facebook like and share button-->
 		<center><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fieeebitmesra%2F&width=152&layout=button_count&action=like&size=large&show_faces=true&share=true&height=46&appId" width="152" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 		</center>
 	</div>
+
+	<!-- The code of different pages goes here-->
 	<div id="container-2"></div>
 
-<footer class="footer-distributed" id="foot">
-	<div class="footer-left">
-		<h3>IEEE |<span>| BIT MESRA</span></h3>
-		<p style="color: #fff; font-size: 16px; font-weight: normal;">Student Branch Code: STB32081</p>
-		<p class="footer-links">
-			<a href="https://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a>.
-			<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">IEEE Xplore</a>.
-			<a href="http://standards.ieee.org/" target="_blank">IEEE Standards</a>.
-			<a href="http://www.ieeer10.org/" target="_blank">IEEE Region10</a>
-		</p>
+	<!-- footer divided into 3 vertical sections. Rest of the code is self explanatory-->
+	<footer class="footer-distributed" id="foot">
+		<div class="footer-left">
+			<h3>IEEE |<span>| BIT MESRA</span></h3>
+			<p style="color: #fff; font-size: 16px; font-weight: normal;">Student Branch Code: STB32081</p>
+			<p class="footer-links">
+				<a href="https://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a>.
+				<a href="http://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">IEEE Xplore</a>.
+				<a href="http://standards.ieee.org/" target="_blank">IEEE Standards</a>.
+				<a href="http://www.ieeer10.org/" target="_blank">IEEE Region10</a>
+			</p>
 
-		<p class="developers" style="font-size: 16px; font-weight: normal;"> Developed by : <a href="https://www.facebook.com/shubham.jawandhiya" target=_blank> Shubham Jawandhiya </a>.<a href="https://www.facebook.com/satyam.agrawaal.88" target=_blank> Satyam Agrawaal </a>.<a href="https://www.facebook.com/Niraj.1d" target=_blank> Niraj Shubham </a> </p>
-	<p class="footer-company-name">COPYRIGHT &copy; 2018</p>
-	</div>
-	<div class="footer-center">
-		<div>
-			<a href="https://www.google.co.in/maps/place/Birla+Institute+of+Technology,+Mesra/@23.4122599,85.4377524,17z/data=!3m1!4b1!4m5!3m4!1s0x39f4fb53f0c27be7:0x66180c1cf3c5e704!8m2!3d23.4122599!4d85.4399411?hl=en" target="_blank"><i class="fa fa-map-marker"></i></a>
-			<p><span>Birla Institute of Technology, Mesra</span> Ranchi, Jharkhand 835215</p>
+			<p class="developers" style="font-size: 16px; font-weight: normal;"> Developed by : <a href="https://www.facebook.com/shubham.jawandhiya" target=_blank> Shubham Jawandhiya </a>.<a href="https://www.facebook.com/satyam.agrawaal.88" target=_blank> Satyam Agrawaal </a>.<a href="https://www.facebook.com/Niraj.1d" target=_blank> Niraj Shubham </a> </p>
+		<p class="footer-company-name">COPYRIGHT &copy; 2018</p>
 		</div>
-		<div>
-			<i class="fa fa-phone"></i>
-			<p>Phone: +91 9955924644</p>
+		<div class="footer-center">
+			<div>
+				<a href="https://www.google.co.in/maps/place/Birla+Institute+of+Technology,+Mesra/@23.4122599,85.4377524,17z/data=!3m1!4b1!4m5!3m4!1s0x39f4fb53f0c27be7:0x66180c1cf3c5e704!8m2!3d23.4122599!4d85.4399411?hl=en" target="_blank"><i class="fa fa-map-marker"></i></a>
+				<p><span>Birla Institute of Technology, Mesra</span> Ranchi, Jharkhand 835215</p>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>Phone: +91 9955924644</p>
+			</div>
+			<div>
+				<i class="fa fa-globe	"></i>
+				<p><a href="https://www.bitmesra.ac.in/" target="_blank">www.bitmesra.ac.in</a></p>
+			</div>
 		</div>
-		<div>
-			<i class="fa fa-globe	"></i>
-			<p><a href="https://www.bitmesra.ac.in/" target="_blank">www.bitmesra.ac.in</a></p>
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>BIT MESRA</span>
+					For over five decades, BIT Mesra has been engaged in nurturing minds through a rich heritage of academic excellence. Essentially a hub of bustling student activities, the beautiful campus has been a second-home to thousands of students in their journey to challenge the times.
+			</p>
+			<div class="footer-icons">
+				<a href="https://www.facebook.com/ieeebitmesra/" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="mailto:contact@ieeebitmesra.in" ><i class="fa fa-envelope" aria-hidden="true"></i></a>
+			</div>
 		</div>
-	</div>
-	<div class="footer-right">
-		<p class="footer-company-about">
-			<span>BIT MESRA</span>
-				For over five decades, BIT Mesra has been engaged in nurturing minds through a rich heritage of academic excellence. Essentially a hub of bustling student activities, the beautiful campus has been a second-home to thousands of students in their journey to challenge the times.
-		</p>
-		<div class="footer-icons">
-			<a href="https://www.facebook.com/ieeebitmesra/" target="_blank"><i class="fa fa-facebook"></i></a>
-			<a href="mailto:contact@ieeebitmesra.in" ><i class="fa fa-envelope" aria-hidden="true"></i></a>
-		</div>
-	</div>
-</footer>
+	</footer>
 </body>
 </html>
