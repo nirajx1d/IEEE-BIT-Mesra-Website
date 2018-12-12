@@ -38,7 +38,7 @@
 
         function check_name() {
             var name = $('#name').val();
-            if(name!='') {
+            if(name!='' && name.trim()!='') {
                 $('#name_error_msg').hide();
             }
             else {
@@ -77,7 +77,7 @@
 
         function check_message() {
             message = $('#message').val();
-            if(message!='') {
+            if(message!=''&& message.trim()!='') {
                 $('#message_error_msg').hide();
             }
             else {
@@ -129,6 +129,7 @@
             <div class="contact-icons">
                     <a href="mailto:contact@ieeebitmesra.in" target="_blank"><i class="fa fa-envelope contact-mail-icon" aria-hidden="true"></i></a>
                     <a href="https://facebook.com/ieeebitmesra" target="_blank"><i class="fa fa-facebook-official contact-fb-icon" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/ieee-student-branch-bit-mesra" target="_blank"><i class="fa fa-linkedin-square contact-linkedin-icon" aria-hidden="true"></i></a>
             </div>
         </h1>
         <div class="mgb50px">
