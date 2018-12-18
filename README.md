@@ -2,7 +2,7 @@
 This is a simple static info website for the IEEE Student Branch BIT Mesra. The site aims to provide information about the IEEE society at BIT Mesra, events, team, and contact details.
 Link : https://www.ieeebitmesra.in
 
-Technologies used : HTML, CSS, JavaScript, jQuery, PHP
+#### Technologies used : HTML5, CSS3, JavaScript, jQuery, PHP
 
 ## Installation:
 
